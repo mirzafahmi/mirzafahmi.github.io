@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://mirzafahmi.github.io/blog</id>
+    <title>Ahmad Mirza Fahmi Blog</title>
+    <updated>2025-06-09T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://mirzafahmi.github.io/blog"/>
+    <subtitle>Ahmad Mirza Fahmi Blog</subtitle>
+    <icon>https://mirzafahmi.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[What make me start programming?]]></title>
+        <id>https://mirzafahmi.github.io/blog/test</id>
+        <link href="https://mirzafahmi.github.io/blog/test"/>
+        <updated>2025-06-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[It is all started in June, 2022 in my last job, I guess. That time I already 1 year plus in my first job. The main bussiness of the company is in manufacturing of the medical devices, one of top player in Malaysia too.]]></summary>
+        <content type="html"><![CDATA[<p>It is all started in June, 2022 in my last job, I guess. That time I already 1 year plus in my first job. The main bussiness of the company is in manufacturing of the medical devices, one of top player in Malaysia too.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="there-is-must-be-a-better-way-to-do-that-moment"><em>"There is must be a better way to do that"</em> moment<a href="https://mirzafahmi.github.io/blog/test#there-is-must-be-a-better-way-to-do-that-moment" class="hash-link" aria-label="Direct link to there-is-must-be-a-better-way-to-do-that-moment" title="Direct link to there-is-must-be-a-better-way-to-do-that-moment">​</a></h2>
+<p>Due to the nature of the small-medium company (SME), most of us will been assigned with multiple portfolio, including me and also the most senior staff there. He also been my desk neighbour for the duration i been working there too.</p>
+<p>One day during the peak of covid cases around the world, the test kit for covid is limited. There was an influx in demand domestically and internationally. We got some order from Hong Kong or Taiwan if I am not mistaken. But in order to properly pass the custom and delivered to the customer, each cartons of that particular test kit must be attached with 2 documents which is commercial invoice (CI) and packing list (PL). The tricky part was if we have 40 cartons of shipment, 40 sets of documents must be generated. It seems like just 40 sets, but it take 2 hours plus, set of teary, red eyes and neck pain for my colleague finish that task. Yes, the document generation relies on Microsoft Excel as template and manually change the value for each customer.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-programming-journey-begin">The programming journey begin<a href="https://mirzafahmi.github.io/blog/test#the-programming-journey-begin" class="hash-link" aria-label="Direct link to The programming journey begin" title="Direct link to The programming journey begin">​</a></h2>
+<p>During on my way home, I think about that encounter and start googling about that issue once I reached home. During that time, there is no chatGPT yet, so I just relied on the knowledge scattered around the web. One of the solution is using built in approach in Microsoft Excel, it called <code>Range Names</code> if I am not mistaken. It did the work but there is one issue with that approach which is I need to manually save that generated documents one by one which is kind of tedious to me.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="but-i-did-not-satiesfied-with-the-way-of-doing">But I did not satiesfied with the way of doing<a href="https://mirzafahmi.github.io/blog/test#but-i-did-not-satiesfied-with-the-way-of-doing" class="hash-link" aria-label="Direct link to But I did not satiesfied with the way of doing" title="Direct link to But I did not satiesfied with the way of doing">​</a></h4>
+<p>Then I start with another solution which is using <code>python</code>, <code>pandas</code>, <code>openpyxl</code> and <code>win32com</code> specifically. During that time I has some coding knowledge in <code>Javascript</code>, but mostly on frontend spectrum. So, I just copy and paste the script that I randomly found in the web, without understand or learn about python during that time. I just changed some part of code <em>'by try and error'</em> until I got the result I satisfied. My plan for that script is to read customer list excel file and map the info with the document excel template, then save the generated documents as PDF.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="the-feel-of-first-dopamine-hit-from-coding">The feel of first dopamine hit from coding<a href="https://mirzafahmi.github.io/blog/test#the-feel-of-first-dopamine-hit-from-coding" class="hash-link" aria-label="Direct link to The feel of first dopamine hit from coding" title="Direct link to The feel of first dopamine hit from coding">​</a></h4>
+<p>After hours of trial and error, my script worked and successfully generated 40 sets of documents with just one command. Not just that, the generated documents also saved with customer name in PDF format too. In that moment I feel something, way more than first time I start learning programming. Because at first time I learned programming, I mostly learned about frontend spectrum. It just feel something missing as it lack something functional, something that helped the real problem I faced in real life. It is not that I say learning frontend/web development is waste of time but it just incomplete if without backend. .....</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="from-2-hours-of-work-reduced-down-to-just-merely-1-minute">From 2 hours of work reduced down to just merely 1 minute...<a href="https://mirzafahmi.github.io/blog/test#from-2-hours-of-work-reduced-down-to-just-merely-1-minute" class="hash-link" aria-label="Direct link to From 2 hours of work reduced down to just merely 1 minute..." title="Direct link to From 2 hours of work reduced down to just merely 1 minute...">​</a></h4>
+<p>A short while after that event, there is another order from same previous country. Without hesitation, I offered my help to my colleague to put a test on my script that I made. I did some adjustment to the customer list to make sure the column name in Microsoft excel file compatible with my script, then voila... With one command, just merely take 1 minute (ignore the customer list file adjustment), 40 sets of documents generated and saved in PDF format, ready to be printed. I feel the high that been chase by fellow programmer I guess. Yes I know, if included the customer list file adjustment, it can take around 5-10 minutes, but still ~90% time saving there. Then, that script also been used in other same circumstances orders, and I made some last modification plus made <code>bash</code> script to ease my colleague to use it with just one click. I passed that script to my colleague before I left the company and still being used there (hopefully).</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="it-doesnt-stopped-there">It doesn't stopped there<a href="https://mirzafahmi.github.io/blog/test#it-doesnt-stopped-there" class="hash-link" aria-label="Direct link to It doesn't stopped there" title="Direct link to It doesn't stopped there">​</a></h2>
+<p>I started learn python from scratch, mainly with youtube and freecodecamp cource. I spend at least 1 hour per day on weekdays and 2-4 hours on weekend consistently. The process went smoothly due to prior knowledge in <code>Javascript</code>. Then I have big plan on using the power of my new knowledge in <code>python</code> to make my day to day job become easy.</p>
+<p>Another script being made, this time related to summarize sales report that generated from accounting software which in <code>csv</code> format. Well it is easy to do as <code>python</code> has exellent library named <code>pandas</code> that do well in data cleaning and analysis. Previously in my day of learning <code>JavaScript</code>, I have hard time to understand OOP, Class, constructor etc. But this time I stumbled with use case for OOP, which I need to create module for that script so I can reuse it to read based on quaterly of the sales report. Learning anything is so much better when you have situation to use. Then, whenever I need to see the sales pattern or do sales forecasting to restock, it just one click away. I experimented with various module I made, to summarize based on brand, product, customer etc.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="day-to-day-job-got-easier">Day to day job got easier<a href="https://mirzafahmi.github.io/blog/test#day-to-day-job-got-easier" class="hash-link" aria-label="Direct link to Day to day job got easier" title="Direct link to Day to day job got easier">​</a></h2>
+<p>I got comfortable with my python skills, and I started to do bigger dream project that I want to do during that time which is to digitalize and automate <em>raw material inventory</em> which is fall under my portfolio. I started small, but converting physical record, <em>pen and paper</em> method to digital record, microsoft excel/google sheet. Note that during that time I did not know anything other backend technology stack and database technology. So technically microsoft excels/google sheets were both frontend and database to me. During that time I am okay with that as I want to gradually change things and other people that involve in keep record of the sheets are more familiar with that compare to if I introduce new way of keeping record.</p>
+<p>The records were kept based on products, that each file had multiple sheets that based one their components and batch. Let say if that product has 5 components, and 3 of that components has 2 batch, thus the number will be 8 sheets. At some time we had up to 20 sheets only for one product. Imagine that to manually open it to do summary or worst case scenario if have urgent inquiry from sales team.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="why-inquiry-from-sales-team-considered-as-worst-case-scenario">Why inquiry from sales team considered as worst case scenario?<a href="https://mirzafahmi.github.io/blog/test#why-inquiry-from-sales-team-considered-as-worst-case-scenario" class="hash-link" aria-label="Direct link to Why inquiry from sales team considered as worst case scenario?" title="Direct link to Why inquiry from sales team considered as worst case scenario?">​</a></h4>
+<p>This one of reasons that I do really want to digitalize this inventory system. If I am late to respond to the sales team regarding the inquiry, we could lose sales, and my boss will find me due to that. Need to remind again that I handle multiple portfolio, so sometime I cannot response to inquiry fast and even if I want to, it could takes sometimes depends on the level of inquiry.</p>
+<p>Thus, I spends hours on my free time, weekdays and weekends, to create this said scripts. With just <code>python</code>, <code>pandas</code> and some <code>numpy</code>, my ultimate dream during that time born. Now with just one type away in terminal, I can summarize all of our available product that are ready to produce. I also upgrade it to be integrated with google sheet of the warehouse stock list for all other stakeholders to be able to access. During this I learned deeper about OOP, <code>Pandas</code> dataframe, dynamic variable name in class etc. Yes, I never thought that we can make variable name become dynamic. That scripts boost my and my colleagues drastically, because it just not only help sales team, but also help procurement and accounting team too. For accounting team, this script helped the process of to access the current assets (at least for raw material inventory stock) for the audit purposes, while for procurement team, it helped in process of to offset the forecasting the value that made in other scripts so the forecast will take the raw material stock into calculation.</p>
+<p>Other than that, I also create Telegram bot for sales team usage. The reason was everyday I got a tons of chat from them asking the delivery charge for certain products to certain places. So, I made bot, for them to just put input of the quantity of product brands (because most our products follow brand standardize packaging) and destination, whether to penisular Malaysia or east Malaysia. But one shortcoming was I did not have any knowledge of devOps during that time, so I just host my bot locally and I only able to deploy or run it during office hours. Well, at least part of problem solved even with just basic bots.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="scripts-are-not-sustainable">Scripts are not sustainable<a href="https://mirzafahmi.github.io/blog/test#scripts-are-not-sustainable" class="hash-link" aria-label="Direct link to Scripts are not sustainable" title="Direct link to Scripts are not sustainable">​</a></h2>
+<p>One and half month prior to my last day at that company, I find it is difficult to pass my scripts to my successor. It is due to my scripts relies on some programing knowledge to play around and to add new product into if applicable.</p>]]></content>
+        <author>
+            <name>Ahmad Mirza Fahmi</name>
+        </author>
+        <category label="Facebook" term="Facebook"/>
+        <category label="Hello" term="Hello"/>
+        <category label="Docusaurus" term="Docusaurus"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Welcome]]></title>
+        <id>https://mirzafahmi.github.io/blog/welcome</id>
+        <link href="https://mirzafahmi.github.io/blog/welcome"/>
+        <updated>2021-08-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Docusaurus blogging features are powered by the blog plugin.]]></summary>
+        <content type="html"><![CDATA[<p><a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer">Docusaurus blogging features</a> are powered by the <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog" target="_blank" rel="noopener noreferrer">blog plugin</a>.</p>
+<p>Here are a few tips you might find useful.</p>
+<p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p>
+<p>Regular blog authors can be added to <code>authors.yml</code>.</p>
+<p>The blog post date can be extracted from filenames, such as:</p>
+<ul>
+<li><code>2019-05-30-welcome.md</code></li>
+<li><code>2019-05-30-welcome/index.md</code></li>
+</ul>
+<p>A blog post folder can be convenient to co-locate blog post images:</p>
+<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://mirzafahmi.github.io/assets/images/docusaurus-plushie-banner-a60f7593abca1e3eef26a9afa244e4fb.jpeg" width="1500" height="500" class="img_ev3q"></p>
+<p>The blog supports tags as well!</p>
+<p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content>
+        <author>
+            <name>Sébastien Lorber</name>
+            <uri>https://sebastienlorber.com</uri>
+        </author>
+        <author>
+            <name>Yangshun Tay</name>
+            <uri>https://linkedin.com/in/yangshun</uri>
+        </author>
+        <category label="Facebook" term="Facebook"/>
+        <category label="Hello" term="Hello"/>
+        <category label="Docusaurus" term="Docusaurus"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MDX Blog Post]]></title>
+        <id>https://mirzafahmi.github.io/blog/mdx-blog-post</id>
+        <link href="https://mirzafahmi.github.io/blog/mdx-blog-post"/>
+        <updated>2021-08-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Blog posts support Docusaurus Markdown features, such as MDX.]]></summary>
+        <content type="html"><![CDATA[<p>Blog posts support <a href="https://docusaurus.io/docs/markdown-features" target="_blank" rel="noopener noreferrer">Docusaurus Markdown features</a>, such as <a href="https://mdxjs.com/" target="_blank" rel="noopener noreferrer">MDX</a>.</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><p>Use the power of React to create interactive blog posts.</p></div></div>
+<!-- -->
+<p>For example, use JSX to create an interactive button:</p>
+<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">button onClick</span><span class="token operator" style="color:#393A34">=</span><span class="token punctuation" style="color:#393A34">{</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token arrow operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">alert</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">'button clicked!'</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">}</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token maybe-class-name">Click</span><span class="token plain"> me</span><span class="token operator" style="color:#393A34">!</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token operator" style="color:#393A34">/</span><span class="token plain">button</span><span class="token operator" style="color:#393A34">&gt;</span><br></span></code></pre></div></div>
+<button>Click me!</button>]]></content>
+        <author>
+            <name>Sébastien Lorber</name>
+            <uri>https://sebastienlorber.com</uri>
+        </author>
+        <category label="Docusaurus" term="Docusaurus"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Long Blog Post]]></title>
+        <id>https://mirzafahmi.github.io/blog/long-blog-post</id>
+        <link href="https://mirzafahmi.github.io/blog/long-blog-post"/>
+        <updated>2019-05-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This is the summary of a very long blog post,]]></summary>
+        <content type="html"><![CDATA[<p>This is the summary of a very long blog post,</p>
+<p>Use a <code>&lt;!--</code> <code>truncate</code> <code>--&gt;</code> comment to limit blog post size in the list view.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
+        <author>
+            <name>Yangshun Tay</name>
+            <uri>https://linkedin.com/in/yangshun</uri>
+        </author>
+        <category label="Hello" term="Hello"/>
+        <category label="Docusaurus" term="Docusaurus"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[First Blog Post]]></title>
+        <id>https://mirzafahmi.github.io/blog/first-blog-post</id>
+        <link href="https://mirzafahmi.github.io/blog/first-blog-post"/>
+        <updated>2019-05-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet...]]></summary>
+        <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet...</p>
+<p>...consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
+        <author>
+            <name>Sébastien Lorber</name>
+            <uri>https://sebastienlorber.com</uri>
+        </author>
+        <author>
+            <name>Yangshun Tay</name>
+            <uri>https://linkedin.com/in/yangshun</uri>
+        </author>
+        <category label="Hola" term="Hola"/>
+        <category label="Docusaurus" term="Docusaurus"/>
+    </entry>
+</feed>
