@@ -1,0 +1,56 @@
+---
+slug: test
+title: What make me start programming?
+authors: [amf]
+tags: [facebook, hello, docusaurus]
+---
+
+It is all started in June, 2022 in my last job, I guess. That time I already 1 year plus in my first job. The main bussiness of the company is in manufacturing of the medical devices, one of top player in Malaysia too. 
+
+## _"There is must be a better way to do that"_ moment
+
+Due to the nature of the small-medium company (SME), most of us will been assigned with multiple portfolio, including me and also the most senior staff there. He also been my desk neighbour for the duration i been working there too. 
+
+One day during the peak of covid cases around the world, the test kit for covid is limited. There was an influx in demand domestically and internationally. We got some order from Hong Kong or Taiwan if I am not mistaken. But in order to properly pass the custom and delivered to the customer, each cartons of that particular test kit must be attached with 2 documents which is commercial invoice (CI) and packing list (PL). The tricky part was if we have 40 cartons of shipment, 40 sets of documents must be generated. It seems like just 40 sets, but it take 2 hours plus, set of teary, red eyes and neck pain for my colleague finish that task. Yes, the document generation relies on Microsoft Excel as template and manually change the value for each customer.
+
+<!-- truncate -->
+
+## The programming journey begin
+
+During on my way home, I think about that encounter and start googling about that issue once I reached home. During that time, there is no chatGPT yet, so I just relied on the knowledge scattered around the web. One of the solution is using built in approach in Microsoft Excel, it called `Range Names` if I am not mistaken. It did the work but there is one issue with that approach which is I need to manually save that generated documents one by one which is kind of tedious to me.
+
+#### But I did not satiesfied with the way of doing
+
+Then I start with another solution which is using `python`, `pandas`, `openpyxl` and `win32com` specifically. During that time I has some coding knowledge in `Javascript`, but mostly on frontend spectrum. So, I just copy and paste the script that I randomly found in the web, without understand or learn about python during that time. I just changed some part of code _'by try and error'_ until I got the result I satisfied. My plan for that script is to read customer list excel file and map the info with the document excel template, then save the generated documents as PDF.
+
+#### The feel of first dopamine hit from coding
+
+After hours of trial and error, my script worked and successfully generated 40 sets of documents with just one command. Not just that, the generated documents also saved with customer name in PDF format too. In that moment I feel something, way more than first time I start learning programming. Because at first time I learned programming, I mostly learned about frontend spectrum. It just feel something missing as it lack something functional, something that helped the real problem I faced in real life. It is not that I say learning frontend/web development is waste of time but it just incomplete if without backend. .....
+
+#### From 2 hours of work reduced down to just merely 1 minute...
+
+A short while after that event, there is another order from same previous country. Without hesitation, I offered my help to my colleague to put a test on my script that I made. I did some adjustment to the customer list to make sure the column name in Microsoft excel file compatible with my script, then voila... With one command, just merely take 1 minute (ignore the customer list file adjustment), 40 sets of documents generated and saved in PDF format, ready to be printed. I feel the high that been chase by fellow programmer I guess. Yes I know, if included the customer list file adjustment, it can take around 5-10 minutes, but still ~90% time saving there. Then, that script also been used in other same circumstances orders, and I made some last modification plus made `bash` script to ease my colleague to use it with just one click. I passed that script to my colleague before I left the company and still being used there (hopefully).
+
+## It doesn't stopped there
+
+I started learn python from scratch, mainly with youtube and freecodecamp cource. I spend at least 1 hour per day on weekdays and 2-4 hours on weekend consistently. The process went smoothly due to prior knowledge in `Javascript`. Then I have big plan on using the power of my new knowledge in `python` to make my day to day job become easy. 
+
+Another script being made, this time related to summarize sales report that generated from accounting software which in `csv` format. Well it is easy to do as `python` has exellent library named `pandas` that do well in data cleaning and analysis. Previously in my day of learning `JavaScript`, I have hard time to understand OOP, Class, constructor etc. But this time I stumbled with use case for OOP, which I need to create module for that script so I can reuse it to read based on quaterly of the sales report. Learning anything is so much better when you have situation to use. Then, whenever I need to see the sales pattern or do sales forecasting to restock, it just one click away. I experimented with various module I made, to summarize based on brand, product, customer etc.
+
+## Day to day job got easier
+
+I got comfortable with my python skills, and I started to do bigger dream project that I want to do during that time which is to digitalize and automate _raw material inventory_ which is fall under my portfolio. I started small, but converting physical record, _pen and paper_ method to digital record, microsoft excel/google sheet. Note that during that time I did not know anything other backend technology stack and database technology. So technically microsoft excels/google sheets were both frontend and database to me. During that time I am okay with that as I want to gradually change things and other people that involve in keep record of the sheets are more familiar with that compare to if I introduce new way of keeping record.
+
+The records were kept based on products, that each file had multiple sheets that based one their components and batch. Let say if that product has 5 components, and 3 of that components has 2 batch, thus the number will be 8 sheets. At some time we had up to 20 sheets only for one product. Imagine that to manually open it to do summary or worst case scenario if have urgent inquiry from sales team.
+
+#### Why inquiry from sales team considered as worst case scenario?
+
+This one of reasons that I do really want to digitalize this inventory system. If I am late to respond to the sales team regarding the inquiry, we could lose sales, and my boss will find me due to that. Need to remind again that I handle multiple portfolio, so sometime I cannot response to inquiry fast and even if I want to, it could takes sometimes depends on the level of inquiry.
+
+Thus, I spends hours on my free time, weekdays and weekends, to create this said scripts. With just `python`, `pandas` and some `numpy`, my ultimate dream during that time born. Now with just one type away in terminal, I can summarize all of our available product that are ready to produce. I also upgrade it to be integrated with google sheet of the warehouse stock list for all other stakeholders to be able to access. During this I learned deeper about OOP, `Pandas` dataframe, dynamic variable name in class etc. Yes, I never thought that we can make variable name become dynamic. That scripts boost my and my colleagues drastically, because it just not only help sales team, but also help procurement and accounting team too. For accounting team, this script helped the process of to access the current assets (at least for raw material inventory stock) for the audit purposes, while for procurement team, it helped in process of to offset the forecasting the value that made in other scripts so the forecast will take the raw material stock into calculation.
+
+Other than that, I also create Telegram bot for sales team usage. The reason was everyday I got a tons of chat from them asking the delivery charge for certain products to certain places. So, I made bot, for them to just put input of the quantity of product brands (because most our products follow brand standardize packaging) and destination, whether to penisular Malaysia or east Malaysia. But one shortcoming was I did not have any knowledge of devOps during that time, so I just host my bot locally and I only able to deploy or run it during office hours. Well, at least part of problem solved even with just basic bots.
+
+## Scripts are not sustainable
+
+One and half month prior to my last day at that company, I find it is difficult to pass my scripts to my successor. It is due to my scripts relies on some programing knowledge to play around and to add new product into if applicable.
