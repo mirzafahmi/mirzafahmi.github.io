@@ -5,7 +5,12 @@
  */
 
 /* You can override the default Infima variables here. */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Kode+Mono:wght@700&display=swap');
+
 :root {
+  --ifm-font-family-base: 'Inter', sans-serif;
+  --ifm-font-family-mono: 'Kode Mono', monospace;
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -31,6 +36,10 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+.navbar {
+  font-family: 'Kode Mono', monospace;
+}
+
 .navbar__logo img {
   filter: none;
 }
@@ -39,4 +48,6 @@ html[data-theme='dark'] .navbar__logo img {
   filter: invert(1);
 }
 
-
+html[data-route='home'] {
+  --ifm-font-family-base: 'Kode Mono', monospace;
+}

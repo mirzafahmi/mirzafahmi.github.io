@@ -5,7 +5,8 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "build": "docusaurus build",
+    "extract:pdf": "node scripts/extractPdfMetadata.js",
+    "build": "yarn extract:pdf && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -19,7 +20,7 @@
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
     "devicon": "^2.16.0",
-    "pdfjs-dist": "^3.11.174",
+    "pdf-parse": "^1.1.1",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

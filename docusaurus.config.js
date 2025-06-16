@@ -25,10 +25,13 @@ const config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
+  deploymentBranch: 'gh-pages',
+  trailingSlash: false,
+  
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'mirzafahmi', // Usually your GitHub org/user name.
+  projectName: 'mirzafahmi.github.io', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -83,7 +86,7 @@ const config = {
       navbar: {
         title: 'MirzaFahmi',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'AMF Logo',
           src: 'img/amf.svg',
         },
         items: [
@@ -95,7 +98,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/mirzafahmi',
             label: 'GitHub',
             position: 'right',
           },
@@ -114,7 +117,7 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: 'Docusaurous Community',
             items: [
               {
                 label: 'Stack Overflow',
@@ -139,7 +142,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/mirzafahmi',
               },
             ],
           },

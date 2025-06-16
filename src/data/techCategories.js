@@ -3,6 +3,18 @@ import RenderSvg from '../components/svgs/RenderSvg';
 import JwtSvg from '../components/svgs/JwtSvg';
 import StripeSvg from '../components/svgs/StripeSvg';
 import ScrapySvg from '../components/svgs/ScrapySvg';
+import NginxSvg from '../components/svgs/NginxSvg';
+import DrfSvg from '../components/svgs/DrfSvg';
+import NodeJsSvg from '../components/svgs/NodeJsSvg';
+import NuxtJsSvg from '../components/svgs/NuxtJsSvg';
+import GitHubActionSvg from '../components/svgs/GitHubActionSvg';
+import MarkdownSvg from '../components/svgs/MarkdownSvg';
+import FlaskSvg from '../components/svgs/FlaskSvg';
+import VercelSvg from '../components/svgs/VercelSvg.Jsx';
+import GitHubSvg from '../components/svgs/GitHubSvg';
+import ExpressSvg from '../components/svgs/ExpressSvg';
+import BashSvg from '../components/svgs/BashSvg';
+
 
 const techCategories = [
     {
@@ -27,6 +39,11 @@ const techCategories = [
           name: 'Vue',
           iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg',
           link: 'https://vuejs.org/',
+        },
+        {
+          name: 'Nuxt',
+          Svg: NuxtJsSvg,
+          link: 'https://nuxt.com/',
         },
         {
           name: 'Vuetify',
@@ -67,12 +84,16 @@ const techCategories = [
         },
         {
           name: 'Django Rest Framework',
-          iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/djangorest/djangorest-original.svg',
+          Svg: DrfSvg,
+          lightColor: '#000000',
+          darkColor: '#ffffff',
           link: 'https://www.django-rest-framework.org/',
         },
         {
           name: 'Flask',
-          iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg',
+          Svg: FlaskSvg,
+          lightColor: '#000000',
+          darkColor: '#ffffff',
           link: 'https://flask.palletsprojects.com/',
         },
         {
@@ -82,7 +103,7 @@ const techCategories = [
         },
         {
           name: 'pytest',
-          iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytest/pytest-original-wordmark.svg',
+          iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytest/pytest-original.svg',
           link: 'https://docs.pytest.org/',
         },
         {
@@ -114,17 +135,21 @@ const techCategories = [
         },
         {
           name: 'Livewire',
-          iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/livewire/livewire-original-wordmark.svg',
+          iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/livewire/livewire-original.svg',
           link: 'https://laravel-livewire.com/',
         },
         {
           name: 'Node.js',
-          iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg',
+          Svg: NodeJsSvg,
+          lightColor: '#5FA04E',
+          darkColor: '#5FA04E',
           link: 'https://nodejs.org/',
         },
         {
           name: 'Express',
-          iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg',
+          Svg: ExpressSvg,
+          darkColor: '#ffffff',
+          lightColor: '#000000',
           link: 'https://expressjs.com/',
         },
         {
@@ -134,7 +159,9 @@ const techCategories = [
         },
         {
           name: 'Bash',
-          iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg',
+          Svg: BashSvg,
+          darkColor: '#ffffff',
+          lightColor: '#000000',
           link: 'https://www.gnu.org/software/bash/',
         },
         {
@@ -151,6 +178,16 @@ const techCategories = [
           darkColor: '#ffffff',
           link: 'https://stripe.com/docs/api',
         },
+        {
+          name: 'Firebase',
+          iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg',
+          link: 'https://firebase.google.com/',
+        },
+        {
+          name: 'OAuth',
+          iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oauth/oauth-original.svg',
+          link: 'https://oauth.net/2/',
+        }
       ],
     },
     {
@@ -163,7 +200,7 @@ const techCategories = [
         },
         {
           name: 'PostgreSQL',
-          iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg',
+          iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
           link: 'https://www.postgresql.org/',
         },
         {
@@ -223,7 +260,9 @@ const techCategories = [
         },
         {
           name: 'GitHub',
-          iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg',
+          Svg: GitHubSvg,
+          darkColor: '#ffffff',
+          lightColor: '#000000',
           link: 'https://github.com/',
         },
         {
@@ -252,11 +291,6 @@ const techCategories = [
           link: 'https://slack.com/',
         },
         {
-          name: 'ArgoCD',
-          iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/argocd/argocd-original.svg',
-          link: 'https://argo-cd.readthedocs.io/',
-        },
-        {
           name: 'Android Studio',
           iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg',
           link: 'https://developer.android.com/studio',
@@ -280,6 +314,13 @@ const techCategories = [
           name: 'TaskFile',
           iconUrl: 'https://taskfile.dev/img/logo.svg',
           link: 'https://taskfile.dev/',
+        },
+        {
+          name: 'Markdown',
+          Svg: MarkdownSvg,
+          darkColor: '#ffffff',
+          lightColor: '#000000',
+          link: 'https://www.markdownguide.org/',
         },
         {
           name: 'Docusaurus',
@@ -348,7 +389,9 @@ const techCategories = [
         },
         {
           name: 'Vercel',
-          iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg',
+          Svg: VercelSvg,
+          darkColor: '#ffffff',
+          lightColor: '#000000',
           link: 'https://vercel.com/',
         },
         {
@@ -362,6 +405,23 @@ const techCategories = [
           name: 'DigitalOcean',
           iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original.svg',
           link: 'https://www.digitalocean.com/',
+        },
+        {
+          name: 'Nginx',
+          Svg: NginxSvg,
+          lightColor: '#009639',
+          darkColor: '#009639',
+          link: 'https://nginx.org/',
+        },
+        {
+          name: 'GitHub Action',
+          Svg: GitHubActionSvg,
+          link: 'https://github.com/features/actions',
+        },
+        {
+          name: 'ArgoCD',
+          iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/argocd/argocd-original.svg',
+          link: 'https://argo-cd.readthedocs.io/',
         },
       ],
     },

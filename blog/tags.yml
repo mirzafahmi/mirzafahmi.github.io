@@ -17,3 +17,16 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+dev-story:
+  label: Dev Story
+  description: Development Story
+
+motivation:
+  label: Motivation
+
+programming-journey:
+  label: Programming Journey
+
+bug:
+  label: Bug

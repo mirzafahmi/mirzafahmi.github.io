@@ -18,3 +18,16 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# docusaurus tutorial
+blog/2021-08-26-welcome/
+blog/2019-05-28-first-blog-post.md
+blog/2019-05-29-long-blog-post.md
+blog/2021-08-01-mdx-blog-post.mdx
+static/img/docusaurus-social-card.jpg
+static/img/docusaurus.png
+static/img/undraw_docusaurus_mountain.svg
+static/img/undraw_docusaurus_react.svg
+static/img/undraw_docusaurus_tree.svg
+static/img/logo.svg
+src/components/HomepageFeatures
