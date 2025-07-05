@@ -8,7 +8,7 @@ tags: [dev-story, motivation, programming-journey]
 It all started in June 2022 at my last job, I guess. At that time, I had already been at my first job for over a year. The main business of the company was manufacturing medical devices — one of the top players in Malaysia too.
 Due to the nature of the small-medium enterprise (SME), most of us were assigned multiple portfolios, including me and the most senior staff member there. He had also been my desk neighbor for the duration I had been working there.
 
-## "There Must Be a Better Way to Do That" Moment
+## _"There Must Be a Better Way to Do That"_ Moment
 
 One day during the peak of COVID cases around the world, test kits for COVID were limited. There was an influx in demand domestically and internationally. We got some orders from Hong Kong or Taiwan, if I'm not mistaken. But to properly pass customs clearance and deliver to the customer, each carton of that particular test kit had to be attached with 2 documents: a commercial invoice (CI) and packing list (PL). The tricky part was that if we had 40 cartons for shipment, 40 sets of documents had to be generated. It might seem like just 40 sets, but it took over 2 hours, resulting in teary, red eyes and neck pain for my colleague to finish that task. Yes, the document generation relied on Microsoft Excel as a template, with values manually changed for each customer.
 

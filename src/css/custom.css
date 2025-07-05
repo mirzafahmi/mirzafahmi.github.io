@@ -11,29 +11,51 @@
 :root {
   --ifm-font-family-base: 'Inter', sans-serif;
   --ifm-font-family-mono: 'Kode Mono', monospace;
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --ifm-color-primary: #6b5d4d;
+  --ifm-color-primary-dark: #5f5346;
+  --ifm-color-primary-darker: #544a3f;
+  --ifm-color-primary-darkest: #493f37;
+  --ifm-color-primary-light: #877462;
+  --ifm-color-primary-lighter: #9d8a79;
+  --ifm-color-primary-lightest: #c6b6a5;
+
+  /* Neutral light background with warmth */
+  --ifm-background-color: #f9f7f4;
+  --ifm-card-background-color: #f3f0eb;
+  --ifm-color-emphasis-300: #d6d0c8;
+
+  /* Code line highlight with subtle earth tone */
+  --docusaurus-highlighted-code-line-bg: rgba(107, 93, 77, 0.08);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --ifm-card-background-color: #1e1e1e; /* Cards and sections like TechStack */
-  --ifm-color-emphasis-300: #2a2a2a;
+  --ifm-color-primary: #D4AA7D;
+  --ifm-color-primary-dark: #cc9964;
+  --ifm-color-primary-darker: #c79157;
+  --ifm-color-primary-darkest: #b1783b;
+  --ifm-color-primary-light: #dcbb96;
+  --ifm-color-primary-lighter: #e1c3a3;
+  --ifm-color-primary-lightest: #eddcc9;
+  
+  --ifm-background-color: #1e1e1e;
+  --ifm-card-background-color: #292929; /* Cards and sections like TechStack */
+  --ifm-color-emphasis-300: #494747;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+@layer base {
+  .footer {
+    --ifm-footer-color: #EFD09E;
+  }
+}
+
+@layer base {
+  [data-theme='dark'] .footer--dark {
+    --ifm-footer-background-color: #272727;
+  }
 }
 
 .navbar {

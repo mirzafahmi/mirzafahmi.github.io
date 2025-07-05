@@ -14,6 +14,15 @@ import VercelSvg from '../components/svgs/VercelSvg.Jsx';
 import GitHubSvg from '../components/svgs/GitHubSvg';
 import ExpressSvg from '../components/svgs/ExpressSvg';
 import BashSvg from '../components/svgs/BashSvg';
+import SassSvg from '../components/svgs/SassSvg';
+import RailwaySvg from '../components/svgs/RailwaySvg';
+import GoogleBigQuerySvg from '../components/svgs/GoogleBigQuerySvg';
+import NgrokSvg from '../components/svgs/NgrokSvg';
+import ChocolateySvg from '../components/svgs/ChocolateySvg';
+import WatchtowerSvg from '../components/svgs/WatchtowerSvg';
+import Ec2Svg from '../components/svgs/Ec2Svg';
+import DiagramsNetSvg from '../components/svgs/diagramsNetSvg';
+import NotionSvg from '../components/svgs/NotionSvg';
 
 
 const techCategories = [
@@ -54,6 +63,11 @@ const techCategories = [
           name: 'jQuery',
           iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg',
           link: 'https://jquery.com/',
+        },
+        {
+          name: 'Sass',
+          Svg: SassSvg,
+          link: 'https://sass-lang.com/',
         },
         {
           name: 'Bootstrap',
@@ -165,6 +179,13 @@ const techCategories = [
           link: 'https://www.gnu.org/software/bash/',
         },
         {
+          name: 'Ngrok',
+          Svg: NgrokSvg,
+          darkColor: '#ffffff',
+          lightColor: '#1F1E37',
+          link: 'https://ngrok.com/',
+        },
+        {
           name: 'JSON Web Token',
           Svg: JwtSvg,
           lightColor: '#000000',
@@ -187,6 +208,13 @@ const techCategories = [
           name: 'OAuth',
           iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oauth/oauth-original.svg',
           link: 'https://oauth.net/2/',
+        },
+        {
+          name: 'BigQuery API',
+          Svg: GoogleBigQuerySvg,
+          lightColor: '#669DF6',
+          darkColor: '#669DF6',
+          link: 'https://cloud.google.com/bigquery'
         }
       ],
     },
@@ -271,6 +299,25 @@ const techCategories = [
           link: 'https://www.postman.com/',
         },
         {
+          name: 'Devtoys',
+          iconUrl: 'https://devtoys.app/images/logo.svg',
+          link: 'https://devtoys.app/',
+        },
+        {
+          name: 'Draw.io',
+          Svg: DiagramsNetSvg,
+          darkColor: '#F08705',
+          lightColor: '#F08705',
+          link: 'https://www.drawio.com/',
+        },
+        {
+          name: 'Notion',
+          Svg: NotionSvg,
+          darkColor: '#000000',
+          lightColor: '#000000',
+          link: 'https://www.notion.com/',
+        },
+        {
           name: 'Bitbucket',
           iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bitbucket/bitbucket-original.svg',
           link: 'https://bitbucket.org/',
@@ -289,6 +336,13 @@ const techCategories = [
           name: 'Slack',
           iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-original.svg',
           link: 'https://slack.com/',
+        },
+        {
+          name: 'Chocolatey',
+          Svg: ChocolateySvg,
+          darkColor: '#80B5E3',
+          lightColor: '#80B5E3',
+          link: 'https://chocolatey.org/',
         },
         {
           name: 'Android Studio',
@@ -378,8 +432,8 @@ const techCategories = [
       title: '🚀 DevOps & Deployment',
       items: [
         {
-          name: 'AWS',
-          iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
+          name: 'EC2',
+          Svg: Ec2Svg,
           link: 'https://aws.amazon.com/',
         },
         {
@@ -400,6 +454,11 @@ const techCategories = [
           lightColor: '#092e20',
           darkColor: '#ffffff',
           link: 'https://render.com/',
+        },
+        {
+          name: 'Railway',
+          Svg: RailwaySvg,
+          link: 'https://railway.com/',
         },
         {
           name: 'DigitalOcean',
@@ -423,6 +482,11 @@ const techCategories = [
           iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/argocd/argocd-original.svg',
           link: 'https://argo-cd.readthedocs.io/',
         },
+        {
+          name: 'Watchtower',
+          Svg: WatchtowerSvg,
+          link: 'https://github.com/containrrr/watchtower'
+        }
       ],
     },
 ];

@@ -6,7 +6,7 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import TechStack from '../components/TechStack';
 import PdfMetadataDate from '../components/PdfMetadataDate';
-
+import DownloadSvg from '../components/svgs/DownloadSvg';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -21,11 +21,17 @@ function HomepageHeader() {
 
         <div className={styles.buttons}>
           <a
+            id="resume-button"
             className="button button--secondary button--lg"
             href="/resume.pdf"
             download
+             style={{
+              display: 'flex',
+              alignItems: 'center', 
+              gap: '0.5rem',        
+            }}
           >
-            <AiOutlineDownload style={{ marginRight: '0.5rem' }} />
+            <DownloadSvg />
             Download Resume
           </a>
         </div>
