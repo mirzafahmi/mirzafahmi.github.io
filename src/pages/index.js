@@ -1,7 +1,7 @@
+import React, { useEffect } from 'react';
 import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import { AiOutlineDownload } from 'react-icons/ai';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import TechStack from '../components/TechStack';
@@ -10,6 +10,20 @@ import DownloadSvg from '../components/svgs/DownloadSvg';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
+
+  useEffect(() => {
+    const btn = document.getElementById('resume-button');
+    if (btn) {
+      btn.addEventListener('click', () => {
+        if (typeof gtag === 'function') {
+          gtag('event', 'resume_click', {
+            event_category: 'button',
+            event_label: 'Resume Downloaded',
+          });
+        }
+      });
+    }
+  }, []);
 
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
@@ -25,10 +39,10 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             href="/resume.pdf"
             download
-             style={{
+            style={{
               display: 'flex',
-              alignItems: 'center', 
-              gap: '0.5rem',        
+              alignItems: 'center',
+              gap: '0.5rem',
             }}
           >
             <DownloadSvg />

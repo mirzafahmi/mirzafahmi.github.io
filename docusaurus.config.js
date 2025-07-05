@@ -167,34 +167,12 @@ const config = {
       src: 'https://www.googletagmanager.com/gtag/js?id=G-BN7Y5HHRKR',
       async: true,
     },
-  ],
-
-  headTags: [
     {
-      tagName: 'script',
-      attributes: {
-        id: 'gtag-init',
-      },
-      innerHTML: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-BN7Y5HHRKR');
-
-        window.addEventListener('DOMContentLoaded', function () {
-        const btn = document.getElementById('resume-button');
-        if (btn) {
-          btn.addEventListener('click', function () {
-            gtag('event', 'click', {
-              event_category: 'button',
-              event_label: 'Resume Dowloaded',
-            });
-          });
-        }
-      });
-      `,
+      src: '/gtag-init.js',
+      async: false,
     },
   ],
+
 };
 
 export default config;
