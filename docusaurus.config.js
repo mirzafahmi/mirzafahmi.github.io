@@ -70,6 +70,7 @@ const config = {
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
+          sortPosts: 'descending',
         },
         theme: {
           customCss: './src/css/custom.css',

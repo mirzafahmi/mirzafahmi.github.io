@@ -23,6 +23,7 @@ import WatchtowerSvg from '../components/svgs/WatchtowerSvg';
 import Ec2Svg from '../components/svgs/Ec2Svg';
 import DiagramsNetSvg from '../components/svgs/diagramsNetSvg';
 import NotionSvg from '../components/svgs/NotionSvg';
+import HttpToolkitSvg from '../components/svgs/HttpToolkitSvg';
 
 
 const techCategories = [
@@ -167,6 +168,11 @@ const techCategories = [
           link: 'https://expressjs.com/',
         },
         {
+          name: 'Jest',
+          iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg',
+          link: 'https://jestjs.io/',
+        },
+        {
           name: 'Nodemon',
           iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodemon/nodemon-original.svg',
           link: 'https://nodemon.io/',
@@ -215,7 +221,12 @@ const techCategories = [
           lightColor: '#669DF6',
           darkColor: '#669DF6',
           link: 'https://cloud.google.com/bigquery'
-        }
+        },
+        {
+          name: 'Redis',
+          iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg',
+          link: 'https://redis.io/',
+        },
       ],
     },
     {
@@ -241,11 +252,6 @@ const techCategories = [
           iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg',
           link: 'https://supabase.com/',
         },
-        {
-          name: 'DBDiagram',
-          iconUrl: 'https://cdn.holistics.io/logo-dbdiagram-notext.ico',
-          link: 'https://dbdiagram.io/',
-				},
 				{
           name: 'SQLAlchemy',
           iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlalchemy/sqlalchemy-original.svg',
@@ -303,6 +309,11 @@ const techCategories = [
           iconUrl: 'https://devtoys.app/images/logo.svg',
           link: 'https://devtoys.app/',
         },
+        {
+          name: 'DBDiagram',
+          iconUrl: 'https://cdn.holistics.io/logo-dbdiagram-notext.ico',
+          link: 'https://dbdiagram.io/',
+				},
         {
           name: 'Draw.io',
           Svg: DiagramsNetSvg,
@@ -380,6 +391,13 @@ const techCategories = [
           name: 'Docusaurus',
           iconUrl: './img/docusaurus.png',
           link: 'https://docusaurus.io/',
+        },
+        {
+          name: 'Http Toolkit',
+          Svg: HttpToolkitSvg,
+          darkColor: '#E1421F',
+          lightColor: '#E1421F',
+          link: 'https://httptoolkit.com/',
         },
       ],
     },

@@ -1,6 +1,6 @@
 ---
 slug: what-made-me-start-programming
-title: What made me start programming?
+title: "What made me start programming?"
 authors: [amf]
 tags: [dev-story, motivation, programming-journey]
 ---
